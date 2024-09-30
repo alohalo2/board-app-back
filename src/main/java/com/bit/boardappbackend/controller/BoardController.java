@@ -131,7 +131,7 @@ public class BoardController {
 
         try {
             log.info("modify boardDto: {}", boardDto);
-
+            System.out.println(uploadFiles);
             if(uploadFiles != null && uploadFiles.length > 0)
                 Arrays.stream(uploadFiles).forEach(file -> log.info("modify uploadFiles: {}", file.getOriginalFilename()));
             if(uploadFiles != null && uploadFiles.length > 0)
